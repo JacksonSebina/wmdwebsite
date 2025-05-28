@@ -1,0 +1,353 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  border:rgba(0, 0, 0, 0.15)
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #310288;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+}
+
+.logo {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-right: 1rem;
+}
+
+.class{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+}
+
+.navbar .nav-link {
+  text-decoration: none;
+  color: white; 
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: #ddd;
+}
+
+.navbar .dropdown-menu {
+  background-color: #333; 
+}
+
+.navbar .dropdown-item {
+  color: white;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.search-container {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+  align-items: center;
+}
+
+.search-container input {
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-container button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #444;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  margin-top: 80px;
+  padding: 2rem;
+}
+
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s;
+  width: 200px;
+  display: flex;
+}
+
+.product-footer{
+  margin-top: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.product-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.featured-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 900px;
+  padding: 0 1rem;
+}
+
+.featured-header h2 {
+  font-size: 2rem; 
+  margin: 0;
+  text-align: center;
+}
+
+.view-more-btn {
+  background-color: #444;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.view-more-btn:hover {
+  background-color: #666;
+}
+
+.phone-card img {
+  width: 100%;
+  height: auto; 
+  object-fit: 10px; 
+  border-radius: 8px;
+}
+
+.phone-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; 
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.phone-grid {
+  align-items: stretch;
+}
+
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.phone {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.phone:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.phone img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.phone button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #1d0c30;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.phone button:hover {
+  background-color: #1d0c30;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  text-decoration: none;
+  color: white;
+  padding: 14px 16px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #444;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#floating-cart-counter {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(9, 28, 194);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+#cart-counter {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color:  rgb(15, 13, 136);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-decoration: none;
+}
+ .contact-container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+    }
+
+    .contact-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-container form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-container label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .contact-container input,
+    .contact-container textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .contact-container button {
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .contact-container button:hover {
+      background-color: #0056b3;
+    }
+
+    .contact-info {
+      margin-top: 30px;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
